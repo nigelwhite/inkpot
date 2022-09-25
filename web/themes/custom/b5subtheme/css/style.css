@@ -11973,4 +11973,11 @@ body {
 }
 .field--name-field-image-close-up .field__item img {
   border-radius: 5px;
+  max-width: 80%;
+}
+
+@media (min-width: 768px) {
+  .field--name-field-image-close-up .field__item img {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

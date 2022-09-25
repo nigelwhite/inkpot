@@ -36,4 +36,11 @@ body {
 
 .field--name-field-image-close-up .field__item img {
   border-radius: 5px;
+  max-width: 80%;
+}
+
+@include media-breakpoint-up(md) {
+  .field--name-field-image-close-up .field__item img {
+    max-width: 100%;
+  }
 }
