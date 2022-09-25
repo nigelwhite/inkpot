@@ -1,3 +1,39 @@
 body {
   background-color: aquamarine;
 }
+
+// mixins
+
+@mixin ink-margin-top-large {
+  margin-top: 4rem;
+}
+
+@mixin ink-margin-top-small {
+  margin-top: 2em;
+}
+
+@mixin ink-margin-top-none {
+  margin-top: 0;
+}
+
+// product full page
+
+.field--name-field-image-full img,
+.field--name-body,
+.field--name-field-image-close-up {
+  @include ink-margin-top-large;
+}
+
+.field--name-field-image-close-up .field__item:not(:first-child) {
+  @include ink-margin-top-small;
+}
+
+@include media-breakpoint-up(md) {
+  .field--name-field-image-close-up .field__item:not(:first-child) {
+    @include ink-margin-top-none;
+  }
+}
+
+.field--name-field-image-close-up .field__item img {
+  border-radius: 5px;
+}

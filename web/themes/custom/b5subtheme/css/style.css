@@ -11954,4 +11954,23 @@ code {
 
 body {
   background-color: aquamarine;
+}
+
+.field--name-field-image-full img,
+.field--name-body,
+.field--name-field-image-close-up {
+  margin-top: 4rem;
+}
+
+.field--name-field-image-close-up .field__item:not(:first-child) {
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  .field--name-field-image-close-up .field__item:not(:first-child) {
+    margin-top: 0;
+  }
+}
+.field--name-field-image-close-up .field__item img {
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
