@@ -11958,7 +11958,8 @@ body {
 
 .field--name-field-image-full img,
 .field--name-body,
-.field--name-field-image-close-up {
+.field--name-field-image-close-up,
+.field--name-field-extra-text {
   margin-top: 4rem;
 }
 
