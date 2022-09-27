@@ -11981,4 +11981,21 @@ body {
   .field--name-field-image-close-up .field__item img {
     max-width: 100%;
   }
+}
+.ink-card {
+  margin: 5px;
+}
+
+.ink-card-image img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.ink-card-title {
+  margin-left: 5px;
+  color: #fff;
+}
+
+.ink-card-badge {
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
