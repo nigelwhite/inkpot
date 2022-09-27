@@ -11986,16 +11986,19 @@ body {
   margin: 5px;
 }
 
-.ink-card-image img {
+.ink-card-image {
   width: 250px;
+}
+
+.ink-card-image img {
   border-radius: 5px;
 }
 
 .ink-card-title {
-  margin-left: 5px;
   color: #fff;
+  margin-left: 10px;
 }
 
-.ink-card-badge {
-  width: 50px;
+.ink-card-badge img {
+  width: 40px;
 }/*# sourceMappingURL=style.css.map */
