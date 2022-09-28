@@ -11982,12 +11982,23 @@ body {
     max-width: 100%;
   }
 }
+.ink-sidebar-product {
+  margin-top: 5rem;
+}
+
+#block-views-block-cards-block-1 h2, #block-views-block-cards-block-1 .h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .ink-card {
-  margin: 5px;
+  margin: 5px 5px 40px 5px;
+  display: block;
+  width: 200px;
 }
 
 .ink-card-image {
-  width: 250px;
+  width: 200px;
 }
 
 .ink-card-image img {
@@ -11995,10 +12006,15 @@ body {
 }
 
 .ink-card-title {
-  color: #fff;
   margin-left: 10px;
+  background-color: rgb(175, 174, 174);
+  border-radius: 5px;
+  padding: 5px 10px 0 10px;
+}
+.ink-card-title h3, .ink-card-title .h3 {
+  font-size: calc(1rem + 0.6vw);
 }
 
-.ink-card-badge img {
+.ink-card-badge .field__item {
   width: 40px;
 }/*# sourceMappingURL=style.css.map */

@@ -4,3 +4,12 @@
  * @file
  * B5 subtheme theme file.
  */
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function b5subtheme_theme_suggestions_region_alter(&$suggestions, $vars) {
+  if ($vars['elements']['#region'] == 'sidebar_second' && Drupal::service('path.matcher')->isFrontPage()) {
+    $suggestions[] = 'region__sidebar_second__front';
+  }
+}
