@@ -18,7 +18,10 @@ body {
 
 // product full page
 
-.field--name-field-image-full img,
+.field--name-field-image-full img {
+  @include ink-margin-top-small;
+}
+
 .field--name-body,
 .field--name-field-image-close-up,
 .field--name-field-extra-text {
@@ -46,8 +49,23 @@ body {
   }
 }
 
+.ink-call-to-order {
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
+  height: 120px;
+}
+
 .field--name-field-badge {
   width: calc(4rem + 5vw);
+  text-align: center;
+}
+
+.field--name-field-order-link {
+  width: 175px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 // produce sidebar
