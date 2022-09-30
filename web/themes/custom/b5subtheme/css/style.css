@@ -11982,6 +11982,10 @@ body {
     max-width: 100%;
   }
 }
+.field--name-field-badge {
+  width: calc(4rem + 5vw);
+}
+
 .ink-sidebar-product {
   margin-top: 5rem;
 }
