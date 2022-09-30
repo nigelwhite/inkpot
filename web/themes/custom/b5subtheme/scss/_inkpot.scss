@@ -54,7 +54,8 @@ body {
   flex-direction: column; /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center; /* center items horizontally, in this case */
-  height: 120px;
+  // height: 120px;
+  margin-top: calc(1rem + 1vw);
 }
 
 .field--name-field-badge {
