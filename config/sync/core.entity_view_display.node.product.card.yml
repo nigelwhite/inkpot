@@ -1,0 +1,82 @@
+uuid: 76fd3564-69cb-41ae-b952-7ebe69163965
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.product.body
+    - field.field.node.product.field_badge
+    - field.field.node.product.field_extra_text
+    - field.field.node.product.field_image
+    - field.field.node.product.field_image_close_up
+    - field.field.node.product.field_image_full
+    - field.field.node.product.field_order_link
+    - node.type.product
+  module:
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_card
+      library: null
+      disable_css: false
+      entity_classes: no_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      title:
+        - node_title
+      image:
+        - field_image
+      badge:
+        - field_badge
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          'link class': ''
+          wrapper: h3
+          class: ''
+id: node.product.card
+targetEntityType: node
+bundle: product
+mode: card
+content:
+  field_badge:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    weight: 104
+    region: badge
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: image
+hidden:
+  body: true
+  field_extra_text: true
+  field_image_close_up: true
+  field_image_full: true
+  field_order_link: true
+  links: true

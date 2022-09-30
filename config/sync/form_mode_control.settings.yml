@@ -1,0 +1,22 @@
+'use  The form mode default linked to  block_content entity( basic )': block_content.basic.default
+'use  The form mode default linked to  comment entity( comment )': comment.comment.default
+'use  The form mode default linked to  node entity( article )': node.article.default
+'use  The form mode default linked to  node entity( page )': node.page.default
+'use  The form mode default linked to  node entity( product )': node.product.default
+'use  The form mode default linked to  user entity( user )': user.user.default
+'use  The form mode editor linked to  node entity( product )': node.product.editor
+creation+content_editor+node+product: node.product.editor
+creation+administrator+node+product: node.product.default
+modification+content_editor+node+product: node.product.editor
+modification+administrator+node+product: node.product.default
+'use  The form mode default linked to  node entity( ordering_details )': node.ordering_details.default
+'use  The form mode default linked to  media entity( audio )': media.audio.default
+'use  The form mode default linked to  media entity( document )': media.document.default
+'use  The form mode default linked to  media entity( image )': media.image.default
+'use  The form mode default linked to  media entity( remote_video )': media.remote_video.default
+'use  The form mode default linked to  media entity( video )': media.video.default
+'use  The form mode media_library linked to  media entity( audio )': media.audio.media_library
+'use  The form mode media_library linked to  media entity( document )': media.document.media_library
+'use  The form mode media_library linked to  media entity( image )': media.image.media_library
+'use  The form mode media_library linked to  media entity( remote_video )': media.remote_video.media_library
+'use  The form mode media_library linked to  media entity( video )': media.video.media_library

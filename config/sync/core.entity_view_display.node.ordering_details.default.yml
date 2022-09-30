@@ -1,0 +1,28 @@
+uuid: 7e8be037-dbde-4346-b85b-2e6e40b55d08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ordering_details.body
+    - node.type.ordering_details
+  module:
+    - text
+    - user
+id: node.ordering_details.default
+targetEntityType: node
+bundle: ordering_details
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,15 @@
+uuid: 8ab5bef0-4514-4a93-b88a-0d25afa5fb9e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: Contact
+recipients:
+  - webdev@permaculture.org.uk
+  - hannah_thorogood@hotmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

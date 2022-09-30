@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 276a6669-af37-47f7-8ca2-af6e11ce3ad7
+name: 'The Inkpot'
+mail: webdev@permaculture.org.uk
+slogan: 'Permaculture Farm in Lincolnshire'
+page:
+  403: ''
+  404: ''
+  front: /node/8
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

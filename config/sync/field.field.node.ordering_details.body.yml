@@ -1,0 +1,23 @@
+uuid: 0e5b8c96-caaf-43a4-91f8-5cfa82f2220f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ordering_details
+  module:
+    - text
+id: node.ordering_details.body
+field_name: body
+entity_type: node
+bundle: ordering_details
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

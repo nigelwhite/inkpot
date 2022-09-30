@@ -1,0 +1,21 @@
+uuid: 02e06b27-c3fe-41c3-ab4e-08a44773f130
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extra_text
+    - node.type.product
+  module:
+    - text
+id: node.product.field_extra_text
+field_name: field_extra_text
+entity_type: node
+bundle: product
+label: 'Optional extra text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

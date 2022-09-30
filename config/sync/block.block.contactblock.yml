@@ -1,0 +1,32 @@
+uuid: 4221b8f8-2cfd-4cdc-9e36-31e147a2df05
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - node
+  theme:
+    - b5subtheme
+id: contactblock
+theme: b5subtheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  label_display: '0'
+  provider: contact_block
+  contact_form: feedback
+  form_display: default
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      ordering_details: ordering_details

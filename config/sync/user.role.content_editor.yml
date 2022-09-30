@@ -1,0 +1,23 @@
+uuid: f21ef565-7ab7-43f7-935d-fd2021fb954b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+    - node.type.product
+  module:
+    - form_mode_control
+    - node
+    - system
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'edit any page content'
+  - 'edit any product content'
+  - 'use  The form mode editor linked to  node entity( product )'
+  - 'view the administration theme'
