@@ -12016,11 +12016,11 @@ body {
 .ink-card {
   margin: 5px 5px 40px 5px;
   display: block;
-  width: 200px;
 }
 
 .ink-card-image {
-  width: 200px;
+  width: 250px;
+  height: 150px;
 }
 
 .ink-card-image img {

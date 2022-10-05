@@ -3,6 +3,10 @@ card:
   description: A thumbnail of a product
   # variants: ...
   fields:
+    image:
+      type: image
+      label: Image
+      preview: "web/sites/default/files/2022-09/sheep-250x150.jpg"
     title:
       type: text
       label: Title
@@ -11,7 +15,3 @@ card:
       type: image
       label: Badge
       preview: "web/sites/default/files/2022-09/GT18-2-star250x250.png"
-    image:
-      type: image
-      label: Image
-      preview: "web/sites/default/files/2022-09/sheep-250x150.jpg"
