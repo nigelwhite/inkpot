@@ -11903,6 +11903,11 @@ body {
   display: block;
   width: 250px;
   margin: 30px auto;
+  transition: transform 1s;
+}
+
+.ink-card:hover {
+  transform: scale(1.05);
 }
 
 .ink-card-image {
@@ -11915,7 +11920,7 @@ body {
 
 .ink-card-title {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 10px;
   color: #fff;
   font-weight: bold;

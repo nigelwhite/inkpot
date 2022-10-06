@@ -18,4 +18,4 @@ mix.sass("scss/style.scss", "css/");
 // mix.sass(`${resources}/style.scss`, `${themePath}/css`).sourceMaps();
 // mix.js(`${resources}/js/app.js`, `${themePath}/assets/js`);
 // Uncomment for browser sync
-mix.browserSync("http://inkpot-drupal.ddev.site:877");
+// mix.browserSync("http://inkpot-drupal.ddev.site:877");
