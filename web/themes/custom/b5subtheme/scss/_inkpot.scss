@@ -2,6 +2,16 @@ body {
   background-color: aquamarine;
 }
 
+.align-center {
+  text-align: center;
+}
+
+// home page
+.ink-logo {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
 // mixins
 
 @mixin ink-margin-top-large {

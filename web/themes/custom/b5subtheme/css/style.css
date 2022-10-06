@@ -11842,6 +11842,15 @@ body {
   background-color: aquamarine;
 }
 
+.align-center {
+  text-align: center;
+}
+
+.ink-logo {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
 .field--name-field-image-full img {
   margin-top: 2em;
 }
