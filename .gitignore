@@ -34,3 +34,6 @@ web/sites/*/private
 .ddev
 .local-resources
 .vscode
+
+# ignore theme npm resources
+web/themes/custom/b5subtheme/node_modules
