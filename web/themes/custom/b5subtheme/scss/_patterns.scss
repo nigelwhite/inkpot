@@ -1,7 +1,7 @@
 .ink-card {
   display: block;
   width: 250px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .ink-card-image {
@@ -12,29 +12,25 @@
   border: none;
 }
 
-// .ink-card-image img {
-//   border-radius: 5px;
-// }
+.ink-card-title {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: #fff;
+  font-weight: bold;
+  h3 {
+    font-size: calc(1rem + 0.6vw);
+  }
+}
 
-// .ink-card-title {
-//   position: absolute;
-//   left: 20;
-//   top: 0;
-//   color: #fff;
-//   font-weight: bold;
-//   h3 {
-//     font-size: calc(1rem + 0.6vw);
-//   }
-// }
+.ink-card-badge {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  display: flex;
+  justify-content: flex-end;
+}
 
-// .ink_card_badge {
-//   position: absolute;
-//   top: 10px;
-//   right: 200px;
-//   display: flex;
-//   justify-content: flex-end;
-// }
-
-// .ink-card-badge .field__item {
-//   width: 40px;
-// }
+.ink-card-badge .field__item {
+  width: 40px;
+}

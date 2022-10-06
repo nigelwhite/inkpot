@@ -11902,7 +11902,7 @@ body {
 .ink-card {
   display: block;
   width: 250px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .ink-card-image {
@@ -11911,4 +11911,27 @@ body {
   height: 150px;
   border-radius: 5px;
   border: none;
+}
+
+.ink-card-title {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.ink-card-title h3, .ink-card-title .h3 {
+  font-size: calc(1rem + 0.6vw);
+}
+
+.ink-card-badge {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ink-card-badge .field__item {
+  width: 40px;
 }
