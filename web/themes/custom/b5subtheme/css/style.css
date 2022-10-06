@@ -11839,7 +11839,7 @@ code {
 }
 
 body {
-  background-color: aquamarine;
+  background-color: powderblue;
 }
 
 .align-center {
@@ -11849,6 +11849,15 @@ body {
 .ink-logo {
   width: 100px;
   margin-bottom: 30px;
+}
+
+.bs-region--right {
+  margin-top: 4rem;
+}
+
+.ink-node-title {
+  text-align: center;
+  margin-top: 2em;
 }
 
 .field--name-field-image-full img {
@@ -11910,7 +11919,7 @@ body {
 
 .ink-card {
   display: block;
-  width: 250px;
+  width: 220px;
   margin: 30px auto;
   transition: transform 1s;
 }
@@ -11921,7 +11930,7 @@ body {
 
 .ink-card-image {
   position: relative;
-  width: 250px;
+  width: 220px;
   height: 150px;
   border-radius: 5px;
   border: none;
