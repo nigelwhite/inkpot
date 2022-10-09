@@ -32,7 +32,7 @@ web/sites/*/private
 
 # my stuff
 .ddev
-.local-resources
+local-resources
 .vscode
 
 # ignore theme npm resources
