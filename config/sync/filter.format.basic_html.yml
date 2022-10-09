@@ -2,8 +2,11 @@ uuid: 474bc849-7456-4033-a106-876a759dab6a
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
   module:
     - editor
+    - media
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
 name: 'Basic HTML'
@@ -16,7 +19,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <span> <img src alt data-entity-type data-entity-uuid data-align data-caption width height>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <span> <img src alt data-entity-type data-entity-uuid data-align data-caption width height class> <drupal-media class data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -43,3 +46,16 @@ filters:
     status: true
     weight: 11
     settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes:
+        media_library: media_library
+      allowed_media_types:
+        audio: audio
+        image: image
+        remote_video: remote_video

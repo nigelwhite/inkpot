@@ -20,6 +20,7 @@
         "drupal/bootstrap5": "^2.0",
         "drupal/bootstrap_layouts": "^5.2",
         "drupal/coffee": "^1.2",
+        "drupal/config_split": "^1.9",
         "drupal/contact_block": "^1.6",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",

@@ -20,3 +20,6 @@ modification+administrator+node+product: node.product.default
 'use  The form mode media_library linked to  media entity( image )': media.image.media_library
 'use  The form mode media_library linked to  media entity( remote_video )': media.remote_video.media_library
 'use  The form mode media_library linked to  media entity( video )': media.video.media_library
+'use  The form mode editor linked to  node entity( ordering_details )': node.ordering_details.editor
+'use  The form mode editor linked to  node entity( page )': node.page.editor
+'use  The form mode editor linked to  node entity( article )': node.article.editor

@@ -1,0 +1,25 @@
+uuid: 7972e375-a9b4-4c8e-b3b0-2b82c82f3c93
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6e8bb6e1-af1f-4a18-9fce-e3466e61acb7'
+  module:
+    - block_content
+  theme:
+    - b5subtheme
+id: inkpotfooter
+theme: b5subtheme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:6e8bb6e1-af1f-4a18-9fce-e3466e61acb7'
+settings:
+  id: 'block_content:6e8bb6e1-af1f-4a18-9fce-e3466e61acb7'
+  label: 'Inkpot Footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

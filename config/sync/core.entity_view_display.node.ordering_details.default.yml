@@ -4,10 +4,31 @@ status: true
 dependencies:
   config:
     - field.field.node.ordering_details.body
+    - field.field.node.ordering_details.field_add_docs
     - node.type.ordering_details
   module:
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - body
+        - field_add_docs
 id: node.ordering_details.default
 targetEntityType: node
 bundle: ordering_details
@@ -18,11 +39,16 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
-  links:
-    settings: {  }
+  field_add_docs:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
-hidden: {  }
+hidden:
+  links: true

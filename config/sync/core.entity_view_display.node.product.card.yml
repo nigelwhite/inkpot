@@ -14,25 +14,33 @@ dependencies:
     - node.type.product
   module:
     - ds
+    - field_formatter_class
+    - field_group
     - image
     - user
 third_party_settings:
   ds:
     layout:
-      id: pattern_card
+      id: ds_1col
       library: null
       disable_css: false
       entity_classes: no_classes
       settings:
-        pattern:
-          field_templates: default
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
     regions:
-      title:
+      ds_content:
         - node_title
-      image:
-        - field_image
-      badge:
         - field_badge
+        - group_card_link
+        - group_card_image
     fields:
       node_title:
         plugin_id: node_title
@@ -43,7 +51,39 @@ third_party_settings:
           link: false
           'link class': ''
           wrapper: h3
-          class: ''
+          class: ink-card-title
+  field_group:
+    group_card_image:
+      children:
+        - node_title
+        - field_badge
+      label: 'Card image'
+      parent_name: group_card_link
+      region: ds_content
+      weight: 20
+      format_type: background_image
+      format_settings:
+        classes: ink-card-image
+        show_empty_fields: false
+        id: ''
+        image: field_image
+        image_style: card_image_style
+        hide_if_missing: false
+    group_card_link:
+      children:
+        - group_card_image
+      label: 'Card link'
+      parent_name: ''
+      region: ds_content
+      weight: 19
+      format_type: link
+      format_settings:
+        classes: ink-card
+        show_empty_fields: false
+        id: ''
+        target: entity
+        custom_uri: ''
+        target_attribute: default
 id: node.product.card
 targetEntityType: node
 bundle: product
@@ -58,24 +98,16 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings:
+      field_formatter_class:
+        class: ink-card-badge
       ds:
         ds_limit: ''
-    weight: 104
-    region: badge
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 103
-    region: image
+    weight: 5
+    region: ds_content
 hidden:
   body: true
   field_extra_text: true
+  field_image: true
   field_image_close_up: true
   field_image_full: true
   field_order_link: true

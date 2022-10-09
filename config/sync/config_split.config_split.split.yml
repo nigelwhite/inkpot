@@ -1,0 +1,16 @@
+uuid: 22f3adc8-f7b0-4e77-97d1-5859e5b843b0
+langcode: en
+status: true
+dependencies: {  }
+id: split
+label: Split
+description: ''
+weight: 0
+folder: ../config/split
+module: {  }
+theme: {  }
+blacklist:
+  - system.performance
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

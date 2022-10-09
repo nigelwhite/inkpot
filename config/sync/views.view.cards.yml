@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.card
     - field.storage.node.field_badge
     - field.storage.node.field_image
+    - image.style.card_image_style
     - image.style.thumbnail
     - node.type.product
   module:
@@ -147,7 +148,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: ''
+            image_style: card_image_style
             image_loading:
               attribute: lazy
           group_column: ''
@@ -295,6 +296,7 @@ display:
       style:
         type: default
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: false
           uses_fields: false
@@ -329,7 +331,7 @@ display:
         options:
           query_comment: ''
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_tags: {  }
       relationships: {  }

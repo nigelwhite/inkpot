@@ -3,9 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
+    - node.type.ordering_details
     - node.type.page
     - node.type.product
   module:
+    - filter
     - form_mode_control
     - node
     - system
@@ -17,7 +20,12 @@ weight: 2
 is_admin: false
 permissions:
   - 'access content overview'
+  - 'edit any ordering_details content'
   - 'edit any page content'
   - 'edit any product content'
+  - 'use  The form mode editor linked to  node entity( article )'
+  - 'use  The form mode editor linked to  node entity( ordering_details )'
+  - 'use  The form mode editor linked to  node entity( page )'
   - 'use  The form mode editor linked to  node entity( product )'
+  - 'use text format basic_html'
   - 'view the administration theme'

@@ -1,0 +1,29 @@
+uuid: 9519bcf4-ff0d-4446-bcc3-a265f146a541
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - b5subtheme
+id: pagetitle
+theme: b5subtheme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      ordering_details: ordering_details
+      product: product

@@ -1,0 +1,11 @@
+id: products_block
+label: 'products block'
+ui_limit: ''
+type: block
+type_label: 'Block field'
+entities:
+  node: node
+properties:
+  block: 'views_block:cards-block_1'
+  use_block_title: true
+  add_block_wrappers: false

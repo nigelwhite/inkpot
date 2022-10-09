@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.ordering_details.body
+    - field.field.node.ordering_details.field_add_docs
     - node.type.ordering_details
   module:
     - text
@@ -27,4 +28,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_add_docs: true

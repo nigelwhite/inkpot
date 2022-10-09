@@ -1,0 +1,15 @@
+uuid: 9d09cc14-dc9a-4af8-8ef1-050f0db6bc37
+langcode: en
+status: true
+dependencies: {  }
+name: card_image_style
+label: 'Card image style'
+effects:
+  e87e3a07-3f38-40c7-bea7-189d1d5e3e6e:
+    uuid: e87e3a07-3f38-40c7-bea7-189d1d5e3e6e
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 150
+      upscale: false

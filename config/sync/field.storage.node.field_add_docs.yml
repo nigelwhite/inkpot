@@ -1,0 +1,20 @@
+uuid: aae4ec03-0214-404e-baf2-b1d87622df6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_add_docs
+field_name: field_add_docs
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

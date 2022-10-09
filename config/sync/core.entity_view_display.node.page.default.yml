@@ -4,10 +4,79 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_main_image
     - node.type.page
   module:
+    - ds
+    - image
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          left:
+            wrapper: div
+            classes:
+              col-xs-12: col-xs-12
+              col-md-8: col-md-8
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-xs-12: col-xs-12
+              col-md-4: col-md-4
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      top:
+        - field_main_image
+        - node_title
+      right:
+        - 'dynamic_block_field:node-products_block'
+      left:
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          'link class': ''
+          wrapper: h2
+          class: ink-node-title
+      'dynamic_block_field:node-products_block':
+        plugin_id: 'dynamic_block_field:node-products_block'
+        weight: 0
+        label: hidden
+        formatter: default
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
 id: node.page.default
@@ -20,9 +89,18 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
-    region: content
-  links:
-    weight: 101
-    region: content
-hidden: {  }
+    weight: 1
+    region: left
+  field_main_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: top
+hidden:
+  links: true

@@ -7,11 +7,14 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  bootstrap_layouts: 0
   breakpoint: 0
   ckeditor: 0
   coffee: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   contact: 0
   contact_block: 0
   contextual: 0
@@ -22,6 +25,8 @@ module:
   field: 0
   field_formatter_class: 0
   field_group: 0
+  field_group_background_image: 0
+  field_group_link: 0
   field_ui: 0
   file: 0
   filter: 0

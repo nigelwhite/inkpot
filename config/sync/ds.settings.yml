@@ -6,6 +6,8 @@ ft-default: default
 ft-show-colon: false
 ft-layout-builder: false
 classes:
-  region: {  }
+  region:
+    - ink-region-left
+    - ink-region-right
   field: {  }
 use_field_names: true
