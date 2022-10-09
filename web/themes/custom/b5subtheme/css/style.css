@@ -11839,7 +11839,7 @@ code {
 }
 
 body {
-  background-color: powderblue;
+  background-color: rgb(219, 245, 248);
 }
 
 .align-center {
@@ -11979,7 +11979,7 @@ body {
 
 .ink-card {
   display: block;
-  width: 220px;
+  width: 240px;
   margin: 30px auto;
   transition: transform 1s;
 }
@@ -11990,7 +11990,7 @@ body {
 
 .ink-card-image {
   position: relative;
-  width: 220px;
+  width: 240px;
   height: 150px;
   border-radius: 5px;
   border: none;
