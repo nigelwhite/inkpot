@@ -36,4 +36,5 @@ web/sites/*/private
 .vscode
 
 # ignore theme npm resources
-web/themes/custom/b5subtheme/node_modules
+# web/themes/custom/b5subtheme/node_modules
+# this threw an error on npm run watch
