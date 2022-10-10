@@ -1,0 +1,30 @@
+uuid: d9a9a89d-a1cc-4dac-8ce9-63edb16f68d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c1e16fa6-8c05-4c55-8d14-6385831dd58b'
+  module:
+    - block_content
+    - system
+  theme:
+    - b5subtheme
+id: guidancetohannah
+theme: b5subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:c1e16fa6-8c05-4c55-8d14-6385831dd58b'
+settings:
+  id: 'block_content:c1e16fa6-8c05-4c55-8d14-6385831dd58b'
+  label: 'Guidance to Hannah'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/2

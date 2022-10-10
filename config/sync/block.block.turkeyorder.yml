@@ -1,0 +1,30 @@
+uuid: 1c1df648-2a79-4f29-8f29-ac8039f6dbef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1611aee4-f2fc-4dd5-b10d-46aa0f05c08a'
+  module:
+    - block_content
+    - system
+  theme:
+    - b5subtheme
+id: turkeyorder
+theme: b5subtheme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:1611aee4-f2fc-4dd5-b10d-46aa0f05c08a'
+settings:
+  id: 'block_content:1611aee4-f2fc-4dd5-b10d-46aa0f05c08a'
+  label: 'Turkey order'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /order-turkey

@@ -4,12 +4,16 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - media.type.document
+    - media.type.image
+    - node.type.article
     - node.type.ordering_details
     - node.type.page
     - node.type.product
   module:
     - filter
     - form_mode_control
+    - media
     - node
     - system
 _core:
@@ -20,6 +24,11 @@ weight: 2
 is_admin: false
 permissions:
   - 'access content overview'
+  - 'create document media'
+  - 'create image media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'edit any article content'
   - 'edit any ordering_details content'
   - 'edit any page content'
   - 'edit any product content'

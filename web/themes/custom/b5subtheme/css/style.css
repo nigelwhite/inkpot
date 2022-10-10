@@ -11935,15 +11935,21 @@ body {
   }
 }
 
-.ink-footer img {
-  height: calc(1.5rem + 2vw);
-}
-
 .ink-footer-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.land-logo img {
+  width: 200px;
+  height: 79px;
+}
+
+.gtp-logo img {
+  height: 79px;
+  width: 79px;
 }
 
 .ink-footer-item:first-child {
