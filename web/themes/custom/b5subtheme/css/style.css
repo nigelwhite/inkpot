@@ -11959,8 +11959,26 @@ body {
     width: 500px;
   }
 }
+.about-text-body {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .field--name-field-video-box {
+    height: 25rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .field--name-field-video-box {
+    height: 20rem;
+  }
+}
 .outer-video-container {
   max-width: 600px;
+}
+
+.video-container {
+  height: 230px;
 }
 
 .youtube-responsive-container {

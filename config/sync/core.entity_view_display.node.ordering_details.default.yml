@@ -18,17 +18,27 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes: {  }
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
+        label: ''
     regions:
       ds_content:
+        - node_title
         - body
         - field_add_docs
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: -1
+        label: hidden
+        formatter: default
 id: node.ordering_details.default
 targetEntityType: node
 bundle: ordering_details
@@ -40,7 +50,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
-    region: content
+    region: ds_content
   field_add_docs:
     type: entity_reference_entity_view
     label: above
@@ -49,6 +59,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 1
-    region: content
+    region: ds_content
 hidden:
   links: true

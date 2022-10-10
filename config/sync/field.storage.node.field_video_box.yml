@@ -1,0 +1,19 @@
+uuid: 19faa6d4-c1b6-4b4f-b01e-ff2aa059d225
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_video_box
+field_name: field_video_box
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

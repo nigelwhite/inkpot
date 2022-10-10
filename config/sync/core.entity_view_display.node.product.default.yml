@@ -60,6 +60,7 @@ third_party_settings:
         label: ''
     regions:
       ds_content:
+        - node_title
         - group_product_call_to_order
         - field_image_full
         - body
@@ -67,6 +68,12 @@ third_party_settings:
         - field_order_link
         - field_image_close_up
         - field_extra_text
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: -2
+        label: hidden
+        formatter: default
 id: node.product.default
 targetEntityType: node
 bundle: product

@@ -141,10 +141,30 @@ body {
   }
 }
 
-// Location
+// Location and videos in About
+
+.about-text-body {
+  margin-bottom: 4rem;
+}
+
+@include media-breakpoint-only(xl) {
+  .field--name-field-video-box {
+    height: 25rem;
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  .field--name-field-video-box {
+    height: 20rem;
+  }
+}
 
 .outer-video-container {
   max-width: 600px;
+}
+
+.video-container {
+  height: 230px;
 }
 
 .youtube-responsive-container {
