@@ -50,6 +50,7 @@ third_party_settings:
       settings:
         classes:
           layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
@@ -108,7 +109,11 @@ content:
       image_style: ''
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
     weight: 3
     region: ds_content
   field_image_full:
@@ -119,7 +124,9 @@ content:
       image_style: ''
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
     region: ds_content
   field_order_link:

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_image
-    - field.field.node.article.field_tags
     - image.style.wide
     - node.type.article
   module:
@@ -72,5 +71,4 @@ content:
     weight: 1
     region: main
 hidden:
-  field_tags: true
   links: true

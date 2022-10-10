@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_main_image
+    - image.style.full_width
     - node.type.page
   module:
     - ds
+    - field_formatter_class
     - image
     - text
     - user
@@ -96,10 +98,12 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: full_width
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
     region: top
 hidden:

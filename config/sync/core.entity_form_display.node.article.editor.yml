@@ -6,7 +6,6 @@ dependencies:
     - core.entity_form_mode.node.editor
     - field.field.node.article.body
     - field.field.node.article.field_image
-    - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
@@ -39,7 +38,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_tags: true
   path: true
   promote: true
   status: true
