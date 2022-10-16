@@ -10,7 +10,6 @@ ckeditor5-stylesheets:
 stylesheets-remove:
   - "@bootstrap5/css/style.css"
 regions:
-  banner: Banner
   header: Header
   nav_branding: "Navigation branding region"
   nav_main: "Main navigation region"

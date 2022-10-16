@@ -31,6 +31,7 @@
         "drupal/field_group_background_image": "^1.4",
         "drupal/field_group_link": "^3.0",
         "drupal/form_mode_control": "^2.1",
+        "drupal/twig_tweak": "^3.2",
         "drupal/ui_patterns": "^1.3",
         "drush/drush": "^11.2"
     },

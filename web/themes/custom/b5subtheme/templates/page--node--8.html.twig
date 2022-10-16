@@ -57,7 +57,11 @@ set footer_classes = ' ' ~
 %}
 
 <banner>
-	<p>banner</p>
+	<picture>
+		<source srcset="{{ active_theme_path() }}/images/vista-1.png 2560w" alt="View of the Inkpot home field" media="(min-width: 800px)">
+		<source srcset="{{ active_theme_path() }}/images/vista-400.png 400w" alt="View of the Inkpot home field" media="(min-width: 200px)">
+		<img src="/large.jpg"/>
+	</picture>
 </banner>
 
 <header>
