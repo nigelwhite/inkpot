@@ -56,13 +56,6 @@ set footer_classes = ' ' ~
   (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
 %}
 
-<banner>
-	<picture>
-		<source srcset="{{ active_theme_path() }}/images/vista-1.png 2560w" alt="View of the Inkpot home field" media="(min-width: 800px)">
-		<source srcset="{{ active_theme_path() }}/images/vista-400.png 400w" alt="View of the Inkpot home field" media="(min-width: 200px)">
-		<img src="/large.jpg"/>
-	</picture>
-</banner>
 
 <header>
 	{{ page.header }}
@@ -85,6 +78,17 @@ set footer_classes = ' ' ~
 	{% endif %}
 
 </header>
+
+<banner>
+	<picture>
+		<source srcset="{{ active_theme_path() }}/images/vista-1.png 2560w" media="(min-width: 1200px)">
+		<source srcset="{{ active_theme_path() }}/images/vista-400.png 1000w" media="(min-width: 1000px)">
+		<source srcset="{{ active_theme_path() }}/images/vista-400.png 800w" media="(min-width: 800px)">
+		<source srcset="{{ active_theme_path() }}/images/vista-400.png 600w" media="(min-width: 600px)">
+		<source srcset="{{ active_theme_path() }}/images/vista-400.png 400w" media="(min-width: 400px)">
+		<img src="{{ active_theme_path() }}/images/vista-1.png" alt="View of the Inkpot home field"/>
+	</picture>
+</banner>
 
 <main role="main" class="container-lg my-4">
 	<a id="main-content" tabindex="-1"></a>
