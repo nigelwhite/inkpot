@@ -11839,7 +11839,8 @@ code {
 }
 
 body {
-  background-color: rgb(219, 245, 248);
+  background-color: #efebe9;
+  color: #3e4618;
 }
 
 .field--name-node-title,
